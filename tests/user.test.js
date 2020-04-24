@@ -120,3 +120,10 @@ test("Should upload avatar image", async () => {
   const user = await User.findById(userOneId);
   expect(user.avatar).toEqual(expect.any(Buffer));
 });
+
+// User Test Ideas
+//
+// Should not signup user with invalid name/email/password
+// Should not update user if unauthenticated
+// Should not update user with invalid name/email/password
+// Should not delete user if unauthenticated
